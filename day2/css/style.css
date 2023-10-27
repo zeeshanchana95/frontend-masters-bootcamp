@@ -2,4 +2,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+img {
+    border: 10px solid navajowhite;
+}
+
+h1 {
+    border:5px dotted tomato;
 }
