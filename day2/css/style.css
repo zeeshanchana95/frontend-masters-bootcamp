@@ -34,9 +34,17 @@ ul, ol {
     list-style: none;
     
 }
-a{
+a:link{
     text-align: center;
     color:tomato;
-   
 }
-
+a:visited {
+    color:orange;
+}
+a:hover {
+    font-size: 1.3rem;
+    color:orangered;
+}
+a:active {
+    text-decoration: underline;
+}
