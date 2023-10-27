@@ -34,7 +34,7 @@ ul, ol {
     list-style: none;
     
 }
-a:link{
+ul a:link{
     text-align: center;
     color:tomato;
 }
