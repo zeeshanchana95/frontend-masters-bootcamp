@@ -5,8 +5,16 @@ body {
     background-color: aliceblue;
     text-align: center;
 }
-p {
+p, blockquote{
     color: red;
+}
+
+
+
+#myid {
+    color:yellow;
+    font-weight: bolder;
+
 }
 img {
     border: 10px solid navajowhite;
