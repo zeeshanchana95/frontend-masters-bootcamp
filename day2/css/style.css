@@ -5,7 +5,9 @@ body {
     background-color: aliceblue;
     text-align: center;
 }
-
+p {
+    color: red;
+}
 img {
     border: 10px solid navajowhite;
 }
