@@ -1,0 +1,57 @@
+/* my first css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    text-align: center;
+}
+p, blockquote{
+    color: red;
+}
+
+
+
+#myid {
+    color:yellow;
+    font-weight: bolder;
+
+}
+img {
+    border: 10px solid navajowhite;
+}
+
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+cite {
+    font-size: 1.5rem;
+}
+
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+ul, ol {
+    list-style: none;
+    
+}
+ul a:link{
+    text-align: center;
+    color:tomato;
+}
+a:visited {
+    color:orange;
+}
+a:hover {
+    font-size: 1.3rem;
+    color:orangered;
+}
+a:active {
+    text-decoration: underline;
+}
