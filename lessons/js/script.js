@@ -1,12 +1,11 @@
-const isLightOn = true;
+//if-elseif-else statements
 
-if(isLightOn) {
-    //turn off the light
+let friendsAtYourParty = 0;
+
+if(friendsAtYourParty === 0) {
+    console.log("Woo, now all the things is yours");
+} else if(friendsAtYourParty >= 4) {
+    console.log("That's good number for game");
 } else {
-    //turn on the light
+    console.log("Let's dance")
 }
-
-if(isLightOn){
-    //executes if true
-}
-//executes other lines of code and skip if block if it is false and executes it also then other lines if true
