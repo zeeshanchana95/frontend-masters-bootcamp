@@ -108,3 +108,17 @@ if(isSkyBlue) {
    greeting = "It must be not nice weather";//executes if false
 }
 
+
+- Is it necessary to always has boolean value inside if(true) directly?
+No, can use expressions but that need to be evaluated as truty or falsy value
+
+
+if(2 + 2 === 4) {
+ // === means is equal to 
+ console.log("Horray! Math still works")
+} else {
+    console.log("Uh, panic?")
+}
+
+//why ===, == still works
+// == don't want to do becuase of cooersion 2 + 2 == "4" -> true but if 2 + 2 === "4" -> false
