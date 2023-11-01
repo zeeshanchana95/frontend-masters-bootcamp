@@ -1,9 +1,17 @@
+/**
+ * strings:
+ *  - bunch of characters sitting next to each other
+ *  - used for storing literal values like any word, sentence
+ *  - value need to be enclosed inside Single Quotes '', Double Quotes "", or Backticks `` 
+ * 
+ * Syntax Error: 
+ *  - means your grammar is bad, fix it
+ *  - pretty easy to fix
+ * 
+ */
 
-//executes procedurely
-const montlyRent = 500;
+const myName = "Zeeshan Ahmed";
 
-let yearlyRent = montlyRent * 12;
-console.log(montlyRent, yearlyRent);  //500, 6000
+console.log(myName); //Zeeshan Ahmed
 
-yearlyRent = 1;
-console.log(yearlyRent); //1
+
