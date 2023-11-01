@@ -1,16 +1,11 @@
-//ways of increementing variables by one or by different value
+//for-loop
+    //- used when know definite amount of time we need to execute set of instructions
 
 let friendsAtYourParty = 0;
 
-while(friendsAtYourParty <= 10) {
-
-    //all the statements below are used for increementing the variable by 1;
-    friendsAtYourParty = friendsAtYourParty + 1;
-    friendsAtYourParty += 1;
+for(let i = 0; i < 10; i++){
+    console.log(i);
     friendsAtYourParty++;
-    ++friendsAtYourParty;
-
-
-    console.log(friendsAtYourParty)
 }
-console.log(friendsAtYourParty); //10
+
+console.log(friendsAtYourParty);
