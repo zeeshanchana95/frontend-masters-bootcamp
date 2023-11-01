@@ -67,3 +67,22 @@ console.log(sentence);
 
 
 
+
+
+
+
+
+
+- Using Booleans:
+const isSkyBlue = true;
+console.log(isSkyBlue); //true
+
+
+
+- Primitive Types: Number
+const num = 10;
+const num2 = 10.222;
+const num3 = - 0.5;
+
+console.log(num, num2, num3);
+
