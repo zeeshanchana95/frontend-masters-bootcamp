@@ -1,14 +1,28 @@
-/*
-  Write some code that declares two variables, character and timesToRepeact.
-  Using a loop, repeat that character that many times and then console.log it.
-  Example, if I had character = 'f' and timesToRepeat = 5, it'd console.log
-  'fffff'
-*/
-const character = 't'
-const timesToRepeat = 5;
-let resultString = '';
+//functions and parameters
 
-for(let i = 0; i < 5; i++){
-  resultString += character;
+function addTwo(number) {
+return number + 2;
 }
-console.log(resultString);
+
+const finalAnswer = addTwo(5);
+console.log(finalAnswer);
+
+
+function greet(firstName, lastName, honorific, greeting) {
+return `${greeting} ${honorific} ${lastName}! I’m extremely pleased you could join us, ${firstName}! I hope you enjoy your stay, ${honorific} ${lastName}.`;
+}
+
+console.log(greet("Brian", "Holt", "Lord", "Salutations"));
+console.log(greet("Jack", "Sparrow", "Captain", "A-hoy"));
+
+
+
+const myHomeCity = "Salt Lake City";
+const myHomeState = "Utah";
+const myHomeCountry = "USA";
+
+function logOutYourHome(city, state, country) {
+console.log(`You are from ${city}, ${state} ${country}.`);
+}
+
+logOutYourHome(myHomeCity, myHomeState, myHomeCountry);
