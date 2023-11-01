@@ -8,10 +8,15 @@
  *  - means your grammar is bad, fix it
  *  - pretty easy to fix
  * 
+ * String Concatenation:
+ *  - connecting strings together
+ *  - use + symbol to combine strings together
  */
 
-const myName = "Zeeshan Ahmed";
+const firstName = "Zeeshan"
+const lastName = "Ahmed"
 
-console.log(myName); //Zeeshan Ahmed
+const sentence = "Hello " + firstName + " " + 
+lastName + "! How are you?"; //string concatenation
 
-
+console.log(sentence)
