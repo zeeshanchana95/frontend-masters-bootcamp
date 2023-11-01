@@ -1,11 +1,14 @@
-//for-loop
-    //- used when know definite amount of time we need to execute set of instructions
+/*
+  Write some code that declares two variables, character and timesToRepeact.
+  Using a loop, repeat that character that many times and then console.log it.
+  Example, if I had character = 'f' and timesToRepeat = 5, it'd console.log
+  'fffff'
+*/
+const character = 't'
+const timesToRepeat = 5;
+let resultString = '';
 
-let friendsAtYourParty = 0;
-
-for(let i = 0; i < 10; i++){
-    console.log(i);
-    friendsAtYourParty++;
+for(let i = 0; i < 5; i++){
+  resultString += character;
 }
-
-console.log(friendsAtYourParty);
+console.log(resultString);
