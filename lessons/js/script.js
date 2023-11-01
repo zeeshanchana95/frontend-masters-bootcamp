@@ -16,7 +16,6 @@
 const firstName = "Zeeshan"
 const lastName = "Ahmed"
 
-const sentence = "Hello " + firstName + " " + 
-lastName + "! How are you?"; //string concatenation
+const sentence = `Hello ${firstName} ${lastName}! How are you?`;
 
-console.log(sentence)
+console.log(sentence);

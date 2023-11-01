@@ -23,5 +23,22 @@ let yearlyRent = montlyRent * 12;
 console.log(montlyRent, yearlyRent);  //2
 
 
-- 
+- String Concatenation:
+
+const firstName = "Zeeshan"
+const lastName = "Ahmed"
+const sentence = "Hello " + firstName + " " + lastName + "! How are you? "; //string concatenation 
+
+console.log(sentence); //Hello Zeeshan Ahmed! How are you?
+
+
+- Template String:
+
+const firstName = "Zeeshan"
+const lastName = "Ahmed"
+
+const sentence = `Hello ${firstName} ${lastName}! How are you?`;
+
+console.log(sentence); //Hello Zeeshan Ahmed! How are you?
+
 
