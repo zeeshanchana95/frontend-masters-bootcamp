@@ -334,3 +334,24 @@ console.log(C); // does not work, C was declared inside the function and the fun
 console.log(F); // works, F was declared in the global scope
 
 
+
+- Scope Example:
+//scope example
+
+let something = 'outside the function';
+let thingToKeep;
+
+function thing() {
+    let something = 'outside the if statement';
+    if(true) {
+        let something = 'inside the if statement';
+        console.log(something)
+    }
+    console.log(something);
+    thingToKeep = 'defined now';
+}
+
+thing();
+
+console.log(something);
+console.log(thingToKeep);
