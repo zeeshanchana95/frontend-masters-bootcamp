@@ -1,10 +1,12 @@
+const isLightOn = true;
 
-if(2 + 2 === 4) {
- // === means is equal to 
- console.log("Horray! Math still works")
+if(isLightOn) {
+    //turn off the light
 } else {
-    console.log("Uh, panic?")
+    //turn on the light
 }
 
-//why ===, == still works
-// == don't want to do becuase of cooersion 2 + 2 == "4" -> true but if 2 + 2 === "4" -> false
+if(isLightOn){
+    //executes if true
+}
+//executes other lines of code and skip if block if it is false and executes it also then other lines if true
