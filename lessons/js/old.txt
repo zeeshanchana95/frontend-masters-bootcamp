@@ -2044,3 +2044,31 @@ function addTwoToEveryNumberInTheList (list) {
 
 
 
+
+- Events and Listeners:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Exeprimenting with DOM</title>
+    <style>
+        .red-square {
+          width: 100px;
+          height: 100px;
+          background-color: crimson;
+        }
+      </style>
+</head>
+<body>
+    <button class="event-button">Click me!</button>
+    <script>
+      const button = document.querySelector('.event-button');
+      button.addEventListener('click', function () {
+        alert("Hey there!");
+      });
+    </script>
+</body>
+</html>
+
+
+

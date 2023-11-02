@@ -12,20 +12,12 @@
       </style>
 </head>
 <body>
-    <ul>
-        <li class="js-target">Unchanged</li>
-        <li class="js-target">Unchanged</li>
-        <li>Won't Change</li>
-        <li class="js-target">Unchanged</li>
-        <li>Won't Change</li>
-        <li class="js-target">Unchanged</li>
-    </ul>
+    <button class="event-button">Click me!</button>
     <script>
-    const elementsToChange = document.querySelectorAll('.js-target');
-    for (let i = 0; i < elementsToChange.length; i++) {
-        const currentElement = elementsToChange[i];
-        currentElement.innerText = "Modified by JavaScript!";
-    }
+      const button = document.querySelector('.event-button');
+      button.addEventListener('click', function () {
+        alert("Hey there!");
+      });
     </script>
 </body>
 </html>
