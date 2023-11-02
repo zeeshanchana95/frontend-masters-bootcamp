@@ -12,12 +12,21 @@
       </style>
 </head>
 <body>
-      <div class="red-square"></div>
-      
-      <script>
-        const redSquare = document.querySelector('.red-square');
-        redSquare.style.backgroundColor = 'limegreen';
-      </script>
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+    </ul>
+    <script>
+    const elementsToChange = document.querySelectorAll('.js-target');
+    for (let i = 0; i < elementsToChange.length; i++) {
+        const currentElement = elementsToChange[i];
+        currentElement.innerText = "Modified by JavaScript!";
+    }
+    </script>
 </body>
 </html>
 
