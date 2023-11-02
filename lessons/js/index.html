@@ -13,16 +13,17 @@
 </head>
 <body>
    
-    <div class="color-box"></div>
-    <input class="color-input" placeholder="Type a color here!" />
-    
+    <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
     <script>
-        const input = document.querySelector('.color-input');
-        const paragraph = document.querySelector('.color-box');
-        
-        input.addEventListener("change", function() {
-            paragraph.style.backgroundColor  = input.value;
-        });
+    document.querySelector('.button-container').addEventListener('click', function(event) {
+        alert(`You clicked on button ${event.target.innerText}`);
+    });
     </script>
 </body>
 </html>
