@@ -2104,3 +2104,35 @@ function addTwoToEveryNumberInTheList (list) {
 
 
 
+- Working with 'change' Event:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Exeprimenting with DOM</title>
+    <style>
+        .color-box {
+          background-color: limegreen;
+          width: 100px;
+          height: 100px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="color-box"></div>
+    <input class="color-input" placeholder="Type a color here!" />
+    
+    <script>
+        const input = document.querySelector('.color-input');
+        const paragraph = document.querySelector('.color-box');
+        
+        input.addEventListener("change", function() {
+            paragraph.style.backgroundColor  = input.value;
+        });
+    </script>
+</body>
+</html>
+
+
+

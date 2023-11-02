@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <title>Exeprimenting with DOM</title>
     <style>
-        .red-square {
+        .color-box {
+          background-color: limegreen;
           width: 100px;
           height: 100px;
-          background-color: crimson;
         }
-      </style>
+    </style>
 </head>
 <body>
-    <input placeholder="type into me!" class="input-to-copy" />
-    <p class="p-to-copy-to">Nothing has happened yet.</p>
-
+   
+    <div class="color-box"></div>
+    <input class="color-input" placeholder="Type a color here!" />
     
     <script>
-      const input = document.querySelector('.input-to-copy');
-      const paragraph = document.querySelector('.p-to-copy-to');
-    
-      input.addEventListener("keyup", function() {
-        paragraph.innerText  = input.value;
-      });
+        const input = document.querySelector('.color-input');
+        const paragraph = document.querySelector('.color-box');
+        
+        input.addEventListener("change", function() {
+            paragraph.style.backgroundColor  = input.value;
+        });
     </script>
 </body>
 </html>
