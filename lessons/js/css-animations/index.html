@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exeprimenting CSS Animations</title>
+    <style>
+      @keyframes spin {
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      @keyframes psychadelic {
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+
+      .mole {
+        height: 334px;
+        width: 334px;
+        background-color: brown;
+        border-radius: 50%;
+      }
+
+      .color {
+        animation: psychadelic 3s linear infinite;
+      }
+
+      .spin {
+        animation: spin 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://frontendmasters.github.io/bootcamp/mole-game/mole-hungry.png"
+      style="background-color: brown; border-radius: 50%"
+      class="mole color"
+    />
+    <img
+      src="https://frontendmasters.github.io/bootcamp/mole-game/king-mole-hungry.png"
+      style="background-color: brown; border-radius: 50%"
+      class="mole spin"
+    />
+  </body>
+</html>
