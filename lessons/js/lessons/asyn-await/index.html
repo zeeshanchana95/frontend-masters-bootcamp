@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await Keywords</title>
+  </head>
+  <body>
+    <button id="get-doggo">Get Doggo</button>
+    <img style="height: 250px" id="doggo" src="http://placecorgi.com/250" />
+    <script>
+      async function getDoggo(event) {
+        const res = await fetch("https://dog.ceo/api/breeds/image/random");
+        const resJson = await res.json();
+        document.getElementById("doggo").src = resJson.message;
+      }
+
+      document.getElementById("get-doggo").addEventListener("click", getDoggo);
+    </script>
+  </body>
+</html>
